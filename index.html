@@ -2,8 +2,10 @@
 <style>
 h1 {
   color: black;
+  background-color: #DBF9FC;
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
+  border: 5px #DBF9FC;
   width: 60%;
   height: 20px;
   text-align: center;
@@ -16,8 +18,10 @@ h1 {
 
  h2 {
   color: black;
+  background-color: #DBF9FC;
   font-family: Helvetica, sans-serif;
   font-size: 1.0em;
+  border: 5px #DBF9FC;
   width: 10%;
   height: 20px;
   text-align: center;
@@ -31,8 +35,10 @@ h1 {
 
  h3 {
   color: black;
+  background-color: #DBF9FC;
   font-family: Helvetica, sans-serif;
   font-size: 1.0em;
+  border: 5px #DBF9FC;
   width: 10%;
   height: 20px;
   text-align: center;
@@ -46,8 +52,10 @@ h1 {
 
  h4 {
   color: black;
+  background-color: #DBF9FC;
   font-family: Helvetica, sans-serif;
   font-size: 1.0em;
+  border: 5px #DBF9FC;
   width: 10%;
   height: 20px;
   text-align: center;
@@ -60,8 +68,10 @@ h1 {
  }
  h5 {
   color: black;
+  background-color: #DBF9FC;
   font-family: Helvetica, sans-serif;
   font-size: 1.0em;
+  border: 5px #DBF9FC;
   width: 10%;
   height: 20px;
   text-align: center;
@@ -74,8 +84,10 @@ h1 {
 
  h6 {
   color: black;
+  background-color: #DBF9FC;
   font-family: Helvetica, sans-serif;
   font-size: 1.0em;
+  border: 5px #DBF9FC;
   width: 10%;
   height: 20px;
   text-align: center;
@@ -87,6 +99,22 @@ h1 {
 
  }
 
+ h7 {
+  color: black;
+  background-color: #DBF9FC;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.0em;
+  border: 5px #DBF9FC;
+  width: 10%;
+  height: 20px;
+  text-align: center;
+  margin-left: 46%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  vertical-align: middle;
+
+ }
 </style>
 <h1>Renovacion de Prestamos Banco Santander periodo 2015/01-2015/09</h1>
 
@@ -100,11 +128,6 @@ href="https://github.com/MiguelCuevaMact"> https://github.com/MiguelCuevaMact </
 
 <b>GitHub carpeta de actividad:</b> <a href=  " https://github.com/MiguelCuevaMact/Proyecto_de_Curso_Visualizaci-n_de_Datos "
 >https://github.com/MiguelCuevaMact/Proyecto_de_Curso_Visualizaci-n_de_Datos </a> <br> 
-
-
-
-<b>Tableau:</b> <a
-href=""></a><br>
 
 
 <h2>Introducción</h2>
@@ -190,25 +213,100 @@ Por lo cual este análisis pretende responder a las siguientes preguntas:
 <li><b>SUELDO_ESTIMADO:</b> Monto de sueldo</li>
 <li><b>CUBRIR_DEUDA_CONSUMO_SF_RENOVA_PLD:</b> Porcentaje de deuda cubierta con la 
   renovación</li>
-
-
-
 </ul>
-<div> Una vez analizadas las variables su tipo, formato entre otros aspectos se procedio en una materia pasada a realizar un proceso de limpieza y analisis en la que se llamó Mineria de datos concluyendo con un proceso  KDD y el análisis de datos en Google Colab el cual sito a continuación para trabajar.  </div>
 
+<div>Una vez analizadas las variables su tipo, formato entre otros aspectos se procedio en una materia pasada a realizar un proceso de limpieza y analisis en la que se llamó Mineria de datos concluyendo con un proceso  KDD y el análisis de datos en Google Colab el cual sito a continuación para trabajar.</div>
+
+<p> </p> 
 <b>URL:</b> <a
-href="https://colab.research.google.com/drive/1ea7oUk2eTU2bYRv5gLxl2CDtMEeuSIH3?usp=sharing">https://colab.research.google.com/drive/1ea7oUk2eTU2bYRv5gLxl2CDtMEeuSIH3?usp=sharing</a><br>
+href="https://colab.research.google.com/drive/1GqgOs2q1B20cQCYvzyVslf2_X3OFrjGX#scrollTo=WJIY5ago_pql">https://colab.research.google.com/drive/1GqgOs2q1B20cQCYvzyVslf2_X3OFrjGX#scrollTo=WJIY5ago_pql</a> <br>
 
-De la siguiente notebook, podemos afirmar lo siguiente:
+<p> </p> 
+
+Del  siguiente notebook, podemos concluir lo siguiente:
 <p> </p> 
 <ul>
 
-<li><b>Distribución de Número total de fallecidos registrados por 30 dias:</b> Se puede observar que no hubo fallecidos en TOTAL_MU30DF, con un total de 71684, y con un total de fallecidos es de 1275.</li>
-<li><b>Distribución de Número total de fallecidos registrados por 30 dias:</b> Se puede observar que no hubo fallecidos en TOTAL_MU30DF, con un total de 71857, y con un total de fallecidos es de 1102.</li>
-<li><b>Distribución de Tipo de accidente: </b> Se puede observar que hay una tendencia de COLISIÓN FRONTOLATERAL AFECTANDO EL LADO DERECHO con un total de 15473, donde mayormente hubo accidentes de tráfico. </li>
-<li><b>Distribución de Tipo de accidente:</b> Se puede observar que hay una tendencia de CALLE con un total 44135, donde mayormente hubo accidentes de tráfico. </li>
-<li><b>Distribución cruzada de Mes y Número total de fallecidos registrados por 30 dias:</b> Se puede observar que hay un nivel muy bajo en el mes ABRIL, donde no hay mucha colisión o accidentes de tráfico.  </li>
+<li><b>Conclusion Pre-Proceso:</b>
+
+-Dentro de la parte de mineria de datos y limpieza de mi dataseet, puedo determinar que mis instancias o valores dentro de ciertas caracteristicas fueron transformados, otros limpiados o borrados y otros sobrepuestos de acuerdo a ciertos procesos de mineria de datos  y asi mismo logrando que ciertas caracteristicas con todos los datos correctos se mantengan intactas pero las variables han sido reducidas. Originalmente habia 22 caracteristicas de las cuales quedaron 19. Las 19 caracteristicas o tambien denominadas variables son variables target, estas considero yo indispensables para extraer patrones de correlación, para determinar predicciónes entre otros aspectos tecnicos que nos brinde información crediticia benefica para la entidad bancaria.
+
+</li>
+<p> </p> 
+<div>Seguidamente, de haber realizado el análisis de exploratorio de datos, eh  procedido a realizar un análisis más detallado para encontrar patrones válidos de predicciónes, de identificación y analisis de datos con su respectiva presentación grafica por medio de POWER Bi.</div>
+
+<p> </p> 
+ <iframe title="Renovación de Prestamos Bancarios Banco Santander" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=fe79430b-d20b-4148-b2ec-64997b28cb01&autoAuth=true&ctid=6eeb49aa-436d-43e6-becd-bbdf79e5077d&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWNlbnRyYWwtdXMtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+
+
+ <li><b>Conclusion Power Bi:</b>
+
+Dentro de mi desarrollo y uso de power bi eh podido trabajar y desarrollar 4 interfaces que me permitiran analizar y generar mejores opiniones profesionales frente a mi data:
+
+<p> </p> 
+
+<ul>
+<li><b>- 1. :</b> Eh generado una grafica de identificación de las regiones de dode pertenecen los clientes, los cuales me permitiran descifrar en que regiones estan los mayores clientes potenciales. </li>
 </ul>
 <p> </p> 
-<div>Seguidamente, de haber realizado el análisis de exploratorio de datos, se procederá a realizar un análisis más detallado para encontrar patrones válidos.  </div>
+
+<ul>
+<li><b>- 2. :</b> Asi mismo genere una grafica con los valores monetarios que los clientes renovaron en credito, este gráfico posee dos targets de identificación de datos. </li>
+</ul>
+<p> </p>
+
+<ul>
+<li><b>- 3. :</b> Asi mismo cree un conjunto de barras de datos, que me permite obtener en que mes fueron mejores los creditos otorgados por el banco, como a su vez que cantidad de personas por region saco un determinado valor de prestamo.. </li>
+</ul>
 <p> </p> 
+
+<ul>
+<li><b>- 4. :</b> Y por ultimo presento un grafico de barras, con 2 targets uno valorado en la cantidad total de dinero adeudado y otro target con la cantidad de dinero que va abonando cada cliente, asi mismo cuenta con una tabla de todos los clientes y su información y a medida que se presione un cliente los targets y la grafica se modificaran a ese cliente. . </li>
+</ul>
+<p> </p> 
+
+Con estos datos y información puedo obtener la cantidad de dinero prestada por el banco, la cantidad de dinero recuperara hasta la fecha por el banco, asi mismo la información por cliente de deuda y pago actual, y por supuesto el objetivo general de identificar la región con mas clientes potenciales a una renovación crediticia.
+
+El uso de Power bi  a sido una de las mejores experiencias y programa que eh manejado para este tipo de procesos de visualización de datos. 
+
+<p> </p> 
+
+<iframe title="Clientes vs Valor de Credito Renovado" aria-label="Interactive area chart" id="datawrapper-chart-QeFbQ" src="https://datawrapper.dwcdn.net/QeFbQ/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="554"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+<p> </p> 
+<li><b>Conclusion DataWrapper:</b>
+  <p> </p> 
+  Bueno dentro de mi dataseet que es demasiado extenso en datos, utilize esta segunda herramienta denominada Datawrapper, pero la cual no fue de mucha utilidad a mi parecer ya que no me permite tener las mismas funcionalidades que Power bi para generar graficas realmente personalizadas aca no me permitia el software en linea que pose presentar los datos de la forma que yo deseaba, en este caso presento un resultado conglomerado sobre los clientes y la cantidad de dinero que sacaron de prestamos, como a su vez a que region pertenecen los clientes, no posee muchas tecnicas de visualización avanzada esta tecnica de visualización. 
+  <p> </p> 
+  <b>Herramientas empleadas</b>
+  <p> </p> 
+  <ul>
+  <li><b>Power Bi:</b> Es orientado a proporcionar visualizaciones interactivas con una interfaz lo suficientemente simple como para que los usuarios puedan crear por sí mismos sus propios informes y panele.s   </li>
+  <li><b>Python (Seaborn):</b> Es una librería de visualización de datos para Python desarrollada sobre matplotlib. Ofrece una interfaz de alto nivel para la creación de atractivas gráficas.   </li>
+  <li><b>Datawrapper:</b> Es muy similar a la herramienta de Power Bi, pero no cuenta con una interfaz lo suficientemente facil y es demasiado basica sin muchas herramientas ni posibilidad de edición.    </li>
+    <li><b>Google Sheets:</b> es un programa de hojas de cálculo que se incluye como parte del conjunto gratuito de Google Docs Editors basado en la web que ofrece Google.   </li>
+  <p> </p> 
+  Nota: Como se tiene un conjunto de datos de gran volumen, no es compatible para algunas herramientas para implementar gráfica, porque tiene un limites de datos. Algunas herramientas son compatibles para cargar datos masivos y de pago. 
+  </ul>
+
+
+
+</div>
+<h7>Referencias</h7>
+<div>
+<ul>
+B.O.E. (2014). BOLETÍN OFICIAL DEL ESTADO. BOE. https://www.boe.es/eli/es/o/2014/10/27/int2223/dof/spa/pdf  
+</ul>
+<ul>
+Peris, G. P. (2022). Grupo Alega: Ante el aumento de los accidentes de tráfico es importante contar con abogados especialistas. Diario Siglo XXI. https://www.diariosigloxxi.com/texto-diario/mostrar/3578291/grupo-alega-ante-aumento-accidentes-trafico-importante-contar-abogados-especialistas
+</ul>
+<ul>
+Vanguardia, L. (2022, 6 abril). Estas son las personas que morirán en la carretera esta Semana Santa, según el «big data». La Vanguardia. https://www.lavanguardia.com/motor/actualidad/20220405/8178404/dgt-predice-big-data-cuantas-personas-moriran-accidente-trafico-semana-santa.html
+</ul>
+<ul>
+Fern\U00E1Ndez, M. (2022, 27 abril). La DGT podría cometer un error con sus paneles: causarían más accidentes, según un informe. El EspaÃ±ol. https://www.elespanol.com/reportajes/20220427/dgt-podria-cometer-paneles-causarian-accidentes-informe/668183290_0.html
+</ul>
+
+<ul>
+Fern\U00E1Ndez, M. (2022, 27 abril). La DGT podría cometer un error con sus paneles: causarían más accidentes, según un informe. El EspaÃ±ol. https://www.elespanol.com/reportajes/20220427/dgt-podria-cometer-paneles-causarian-accidentes-informe/668183290_0.html
+</ul>
