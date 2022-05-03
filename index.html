@@ -29,7 +29,6 @@ h1 {
 
  }
 
- 
  h3 {
   color: black;
   font-family: Helvetica, sans-serif;
@@ -71,7 +70,6 @@ h1 {
   padding-bottom: 10px;
   border-radius: 20px;
   vertical-align: middle;
-
  }
 
  h6 {
@@ -89,13 +87,12 @@ h1 {
 
  }
 
-
 </style>
 <h1>Renovacion de Prestamos Banco Santander periodo 2015/01-2015/09</h1>
 
 <b>Estudiante VIU :</b> Miguel Angel Cueva Tacuri <br>
 <b>URL:</b> <a
-href="https://js-7bovbc.stackblitz.io">https://js-7bovbc.stackblitz.io </a><br>
+href="https://js-hf2hle.stackblitz.io"> https://js-hf2hle.stackblitz.io </a><br>
 
 <b>GitHub:</b> <a
 href="https://github.com/MiguelCuevaMact"> https://github.com/MiguelCuevaMact </a><br>
@@ -103,14 +100,14 @@ href="https://github.com/MiguelCuevaMact"> https://github.com/MiguelCuevaMact </
 
 <b>GitHub carpeta de actividad:</b> <a href=  "  "
 > </a> <br> 
+
+
+
 <b>Tableau:</b> <a
 href=""></a><br>
 
 <h2>Introducción</h2>
-<div>
-
-
-
+<div>En los ultimos meses se han disparado el aumento de los accidentes de tráfico en España. La DGT impusieron nuevas normas con el objetivo de reducir siniestralidad vial. Sin Embargo, hubo un gran número de accidentes de tráfico, lo cual ha superado las cifras existentes en 2019, antes de la pandemia. Aunque hay ciertas teorias que apuntan a que el hecho de estar en confinamiento provocó una pérdida de capacidad o efecto contrario en los conductores a la hora de recomenzar el volante. 
 <p> </p> 
 Para poder realizar este estudio, es indispensable descargar el conjunto de datos a través de la información publicada por la DGT. El objetivo principal de la visualización de Datos es el de comunicar una idea o el resultado de un análisis, estudio, para ayudar a la toma decisiones con el objetivo reducirlos. 
 Es necesario realizar el proceso KDD para identificar patrones válidos, novedosos y potencionalmente útiles. El fichero se encuentra en formato xlsx, el cual se dispone 72 columnas (caracteristicas) y de 72959 filas (instancias), cada una corresponde un accidente con victimas, detallandose para cada fichero de registros y las variables que los componen. Además, asimismo se pretende realizar el análisis de datos exploratorio para comprender los datos mediante las visualizaciones que ayuden a entender lo que se puede averiguar de ellos.  
@@ -139,6 +136,21 @@ El objetivo principal es el de obtener el resultado de impacto de un análisis, 
 <li>¿En cual zona hubo mayor impacto en el accidente de tráfico?</li>
 </ul>
 
+</div>
+<h4>Análisis/Metodología</h4>
+<b>Audiencia:</b> Este análisis va dirigido principalmente a los miembros de DGT y a los conductores. Este análisis puede ser implementado para cualquier zona del pais o en el exterior. 
+<p> </p> 
 
-
+<ul>
+<li><b>MES:</b> Mes en el que ocurrió el accidente.</li>
+<li><b>TIPO DE ACCIDENTE:</b> Indica el tipo de accidente ocurrido.</li>
+<li><b>ZONA:</b> Zona en lo que ocurrió el accidente.</li>
+<li><b>TOTAL_MU30DF:</b> Número total de fallecidos registrados en el accidente, computados a 30 días.</li>
+<li><b>TOT_CAM_MAS3500_MU30DF:</b> Número total de conductores y pasajeros de camiones > 3.500 kg fallecidos registrados en el accidente, computados a 30 días.</li>
+<li><b>TOT_CICLO_MU30DF:</b> Número total de ciclomotoristas fallecidos registrados en el accidente, computados a 30 días</li>
+<li><b>TOT_MOTO_MU30DF:</b> Número total de motoristas fallecidos registrados en el accidente, computados a 30 días</li>
+<li><b>TOT_FURG_MU30DF:</b> Número total de conductores y pasajeros de furgonetas fallecidos registrados en el accidente, computados a 30 días</li>
+<li><b>TOT_OTRO_MU30DF:</b> Número total de conductores y pasajeros de vehículos de tipo no clasificado en los anteriores fallecidos registrados en el accidente, computados a 30 días</li>
+</ul>
+<div>Posteriormente, con las variables mencionadas anteriormente, se realizó el proceso de KDD y el análisis de datos en Google Colab.  </div>
 
