@@ -135,6 +135,7 @@ repositorio de bases de datos e información anual se debe tener claves de acces
 </div>
 <h4>Objetivos</h4>
 <div>
+
 El objetivo principal es presentar los resultados de forma visual despues de haber hecho el analisis y estudio del prestente dataseet (pre-limpiado por medio de la materia de mineria de datos), cuyos resultados visuales nos permitan adentrarnos en el conocimiento que nos ofrece este dataseet y asi generar y propomer toma de decisiones para mejorar el sistema crediticio que ofrece el banco Santander en nuestra región. 
 
 Por lo cual este análisis pretende responder a las siguientes preguntas:
@@ -147,19 +148,67 @@ Por lo cual este análisis pretende responder a las siguientes preguntas:
 
 </div>
 <h4>Análisis/Metodología</h4>
-<b>Audiencia:</b> Este análisis va dirigido principalmente a los miembros de DGT y a los conductores. Este análisis puede ser implementado para cualquier zona del pais o en el exterior. 
+
+<b>Audiencia:</b> Este proceso de analisis tecnico va dirigido principalmente a todos los clientes, miembros y directivos del banco santander, para la captación de clientes potenciales para renovaciones crediticias, este analisis puede ser implementado en para cualquier zona del pais o inclusive en sucursales extranjeras. 
+
+ 
 <p> </p> 
+<h5>Características de Dataset seleccionado</h5>
+
 
 <ul>
-<li><b>MES:</b> Mes en el que ocurrió el accidente.</li>
-<li><b>TIPO DE ACCIDENTE:</b> Indica el tipo de accidente ocurrido.</li>
-<li><b>ZONA:</b> Zona en lo que ocurrió el accidente.</li>
-<li><b>TOTAL_MU30DF:</b> Número total de fallecidos registrados en el accidente, computados a 30 días.</li>
-<li><b>TOT_CAM_MAS3500_MU30DF:</b> Número total de conductores y pasajeros de camiones > 3.500 kg fallecidos registrados en el accidente, computados a 30 días.</li>
-<li><b>TOT_CICLO_MU30DF:</b> Número total de ciclomotoristas fallecidos registrados en el accidente, computados a 30 días</li>
-<li><b>TOT_MOTO_MU30DF:</b> Número total de motoristas fallecidos registrados en el accidente, computados a 30 días</li>
-<li><b>TOT_FURG_MU30DF:</b> Número total de conductores y pasajeros de furgonetas fallecidos registrados en el accidente, computados a 30 días</li>
-<li><b>TOT_OTRO_MU30DF:</b> Número total de conductores y pasajeros de vehículos de tipo no clasificado en los anteriores fallecidos registrados en el accidente, computados a 30 días</li>
-</ul>
-<div>Posteriormente, con las variables mencionadas anteriormente, se realizó el proceso de KDD y el análisis de datos en Google Colab.  </div>
+<li><b>Informacion:</b>  Dataset de informacion crediticia de préstamos de los 
+  clientes del banco de loja del periodo 2015 mes de 
+  enero al periodo 2015 mes de septiembre </li>
+<li><b> Tamaño: </b> 22 columnas, 87557 filas </li>
+<p> </p> 
+<p> </p> 
 
+
+<li><b>MES:</b> Mes de campaña</li>
+<li><b>CLIENTE:</b> Codigo de cliente</li>
+<li><b>LINEA_RENOVADO:</b> Monto de linea ofrecida</li>
+<li><b>PLAZO_RENOVADO:</b>Numero de meses ofertados  </li>
+<li><b>FLAG_VENTA:</b>Variable de venta </li>
+<li><b>USO_LINEA_TOTAL_TC_T2:</b>Porcentaje de uso de linea de TC del SF </li>
+<li><b>USO_TRIM_LINEA_Bco:</b>Porcentaje de uso de linea de TC del banco </li>
+<li><b>NR_ENTIDADES_TOTAL_T2:</b> número de entidades </li>
+<li><b>DIFF_NRO_ENTIDA_TOTALES_T2_T12:</b> Diferencia de entidades en el último año  </li>
+<li><b>SDO_CONSUMO_T2:</b> Monto de saldo de consumo </li>
+<li><b>RESENCIA_OFERTA_PLD_RENOVADO:</b> Nro de meses trascurridos desde la primera 
+  oferta </li>
+<li><b>Ahorro_Sldo_Bco_T1:</b>Monto de ahorro en el bco</li>
+<li><b>PConsumo_Sldo_Bco_T1:</b>Monto de préstamo vigente en el bco </li>
+<li><b>SDO_BCO_tot_sm_pasivo_Bco_6M:</b> Monto del promedio semestral de deuda </li>
+<li><b>EDAD:</b> Edad del cliente </li>
+<li><b>SEXO:</b> Identificación sexual del cliente </li>
+<li><b>EST_CIVIL:</b> Estado civil </li>
+<li><b>ANTIGUEDAD_MES:</b> Número de meses de antigüedad como 
+  cliente del banco</li>
+<li><b>REGION:</b> Región de residencia</li>
+<li><b>FLAG_LIMA_PROVINCIA:</b> Identificador de clientes de la provincia</li>
+<li><b>SUELDO_ESTIMADO:</b> Monto de sueldo</li>
+<li><b>CUBRIR_DEUDA_CONSUMO_SF_RENOVA_PLD:</b> Porcentaje de deuda cubierta con la 
+  renovación</li>
+
+
+
+</ul>
+<div> Una vez analizadas las variables su tipo, formato entre otros aspectos se procedio en una materia pasada a realizar un proceso de limpieza y analisis en la que se llamó Mineria de datos concluyendo con un proceso  KDD y el análisis de datos en Google Colab el cual sito a continuación para trabajar.  </div>
+
+<b>URL:</b> <a
+href="https://colab.research.google.com/drive/1ea7oUk2eTU2bYRv5gLxl2CDtMEeuSIH3?usp=sharing">https://colab.research.google.com/drive/1ea7oUk2eTU2bYRv5gLxl2CDtMEeuSIH3?usp=sharing</a><br>
+
+De la siguiente notebook, podemos afirmar lo siguiente:
+<p> </p> 
+<ul>
+
+<li><b>Distribución de Número total de fallecidos registrados por 30 dias:</b> Se puede observar que no hubo fallecidos en TOTAL_MU30DF, con un total de 71684, y con un total de fallecidos es de 1275.</li>
+<li><b>Distribución de Número total de fallecidos registrados por 30 dias:</b> Se puede observar que no hubo fallecidos en TOTAL_MU30DF, con un total de 71857, y con un total de fallecidos es de 1102.</li>
+<li><b>Distribución de Tipo de accidente: </b> Se puede observar que hay una tendencia de COLISIÓN FRONTOLATERAL AFECTANDO EL LADO DERECHO con un total de 15473, donde mayormente hubo accidentes de tráfico. </li>
+<li><b>Distribución de Tipo de accidente:</b> Se puede observar que hay una tendencia de CALLE con un total 44135, donde mayormente hubo accidentes de tráfico. </li>
+<li><b>Distribución cruzada de Mes y Número total de fallecidos registrados por 30 dias:</b> Se puede observar que hay un nivel muy bajo en el mes ABRIL, donde no hay mucha colisión o accidentes de tráfico.  </li>
+</ul>
+<p> </p> 
+<div>Seguidamente, de haber realizado el análisis de exploratorio de datos, se procederá a realizar un análisis más detallado para encontrar patrones válidos.  </div>
+<p> </p> 
